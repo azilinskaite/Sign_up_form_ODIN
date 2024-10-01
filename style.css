@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Questrial", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #EFE8DF;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    border-bottom: 1px solid black;
+    nav a {
+        text-decoration: none;
+        color: black;
+        margin: 0.5em;
+    }
+    img {
+        height: 1.6rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #icons i{
+        margin: 0.5em;
+    }
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+#left-side{
+    width: 6%;
+    display: flex;
+    justify-items: center;
+    h2 {
+        writing-mode: vertical-lr;
+        rotate: 180deg;
+        align-self: center;
+        margin: auto;
+    }
+}
+
+#image-block {
+    background-image: url("./photos/Fig\ leaf.png");
+    background-position: top 35% left 30%;
+    width: 60%;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    h1 {
+        font-size: 7rem;
+        text-align: center;
+        margin-top: 4rem;
+    }
+}
+
+#right-side {
+    width: 34%;
+    .top {
+        background-color: #DDD3C6;
+        font-size: 2rem;
+        padding: 30px;
+    }
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 1.9em;
+    border-style: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+    input, button {
+        outline: none;
+        background-color: transparent;
+        border: 1px solid black;
+        height: 3em;
+        margin-bottom: 0.3em;
+    }
+    input:user-valid {
+        box-shadow: 0 0 4px 1px #70E500;
+    }
+    input:user-invalid {
+        box-shadow: 0 0 4px 1px #1E1E1E;
+    }
+    label {
+        text-transform: uppercase;
+        margin-bottom: 1.4rem;
+        font-size: 0.9em;
+    }
+    button {
+        background-color: black;
+        color: #EFE8DF;
+        text-transform: uppercase;
+        margin-top: 1.2em;
+    }
+    button:active{
+        scale: 1.05;
+    }
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
