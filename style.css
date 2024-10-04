@@ -75,7 +75,7 @@ main {
     }
 }
 
-fieldset {
+form {
     display: flex;
     flex-direction: column;
     padding: 1.9em;
@@ -107,8 +107,13 @@ fieldset {
         text-transform: uppercase;
         margin-top: 1.2em;
     }
-    button:active{
+    button:hover{
         scale: 1.05;
+        
+    }
+    button:active{
+        filter: opacity(0.8);
+        transition-duration: 0.3s;
     }
 }
 
